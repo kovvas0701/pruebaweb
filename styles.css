@@ -1,239 +1,180 @@
 /* Estilos generales */
 
 @font-face {
-    font-family: 'Arca Majora3';
-    src: url('ArcaMajora3-Bold.otf') format('truetype');
-    /* Si la fuente está en formato OTF, utiliza la siguiente línea en su lugar */
-    /* src: url('ruta/a/tu/fuente/prime-light.otf') format('opentype'); */
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Arca Majora3';
+  src: url('ArcaMajora3-Bold.otf') format('truetype');
+  /* Si la fuente está en formato OTF, utiliza la siguiente línea en su lugar */
+  /* src: url('ruta/a/tu/fuente/prime-light.otf') format('opentype'); */
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-    font-family: 'Arca Majora3';
-    margin: 0;
-    padding: 0;
-    color: #000;
-    background-color: #fff;
-  }
-  
-  /* Encabezado */
-  
-  /* Header */
-  
-  header {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    color: #000;
-  }
-  
-  h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  
-  .social-media {
-    margin-top: 20px;
-  }
-  
-  .social-media a {
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    margin: 0 10px;
-  }
-  
-  .social-media a:hover {
-    color: #00bcd4; /* Cambia a color celeste al pasar el mouse sobre el botón de Twitter */
-  }
-  
-  .social-media a.instagram-button:hover {
-    color: #ff9800; /* Cambia a color naranja al pasar el mouse sobre el botón de Instagram */
-  }
-  
-  /* Hero Section */
-  
-  #hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .hero-text {
-    max-width: 500px;
-  }
-  
-  .hero-text h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-  
-  /* Services Section */
-  
-  #services {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  h2 {
-    margin-bottom: 40px;
-    font-size: 32px;
-    transition: font-size 0.3s ease-in-out;
-  }
-  
-  h2:hover {
-    font-size: 36px;
-  }
-  
-  .service {
-    margin-bottom: 60px;
-  }
-  
-  .service h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    transition: font-size 0.3s ease-in-out;
-  }
-  
-  .service h3:hover {
-    font-size: 28px;
-  }
-  
-  .service p {
-    transition: box-shadow 0.3s ease-in-out;
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  
-  .service:hover p {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Footer */
-  
-  footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .footer-description {
-    margin-top: 10px;
-  }
-  
-  /* Nuevos estilos */
-  
-  .services-title {
-    font-size: 36px;
-    transition: font-size 0.3s ease-in-out;
-  }
-  
-  .services-title:hover {
-    font-size: 40px;
-  }
-  
-  .social-media {
-    margin-top: 20px;
-  }
-  
-  .social-media a {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .social-media a:hover {
-    background-color: #00bcd4;
-    color: #000;
-  }
-  
-  .social-media a.instagram-button:hover {
-    background-color: #ff9800;
-    color: #000;
-  }
-  
-  /* Nuevos estilos */
+  font-family: 'Arca Majora3';
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Color de texto en blanco */
+  background-color: #1c1c1c; /* Color de fondo verde oscuro */
+}
+
+/* Encabezado */
+
+/* Header */
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  color: #000;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.social-media a:hover {
+  color: #00bcd4; /* Cambia a color celeste al pasar el mouse sobre el botón de Twitter */
+}
+
+.social-media a.instagram-button:hover {
+  color: #ff9800; /* Cambia a color naranja al pasar el mouse sobre el botón de Instagram */
+}
+
+/* Hero Section */
+
+#hero {
+  background-image: url('hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Services Section */
+
+#services {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+h2:hover {
+  font-size: 36px;
+}
+
+.service {
+  margin-bottom: 60px;
+}
+
+.service h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.service h3:hover {
+  font-size: 28px;
+}
+
+.service p {
+  transition: box-shadow 0.3s ease-in-out;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.service:hover p {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-description {
+  margin-top: 10px;
+}
+
+/* Nuevos estilos */
+
+.services-title {
+  font-size: 36px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.services-title:hover {
+  font-size: 40px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  background-color: #00bcd4;
+  color: #000;
+}
+
+.social-media a.instagram-button:hover {
+  background-color: #ff9800;
+  color: #000;
+}
+
+/* Nuevos estilos */
 
 
 .services-text {
-    font-size: 24px;
-    transition: font-size 0.3s ease-in-out;
-    transition-property: font-size, color;
+  font-size: 24px;
+  transition: font-size 0.3s ease-in-out;
+  transition-property: font-size, color;
 }
 
 .services-text:hover {
-    font-size: 28px;
-}
-
-header {
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-  }
-  
-  .social-media a {
-    font-size: 14px;
-  }
-  
-  #hero .hero-text h2 {
-    font-size: 32px;
-  }
-  
-  .service h3 {
-    font-size: 20px;
-  }
-  
-  .service p {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 20px;
-  }
-  
-  .social-media a {
-    font-size: 12px;
-  }
-  
-  #hero .hero-text h2 {
-    font-size: 28px;
-  }
-  
-  .services-title {
-    font-size: 32px;
-  }
-  
-  .service h3 {
-    font-size: 18px;
-  }
-  
-  .service p {
-    max-width: 100%;
-  }
+  font-size: 28px;
 }
