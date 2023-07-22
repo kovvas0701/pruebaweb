@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tu página web</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.1.1/lazyload.min.js"></script>
+  <script src="script.js"></script>  <!-- js externo  -->
 </head>
 <body>
   <header>
@@ -46,30 +49,5 @@
     <p class="footer-description">Alejandro Chiroque Tejada - Desarrollo Web &copy; 2023</p>
   </footer>
 
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.fade-up').each(function() {
-        var bottom_of_element = $(this).offset().top + $(this).outerHeight() - 200;
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-        if (bottom_of_window > bottom_of_element) {
-          $(this).addClass('visible');
-        }
-      });
-    });
-
-    $(window).scroll(function() {
-      $('.fade-up').each(function() {
-        var bottom_of_element = $(this).offset().top + $(this).outerHeight() - 200;
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-        if (bottom_of_window > bottom_of_element) {
-          $(this).addClass('visible');
-        }
-      });
-    });
-  </script>
 </body>
 </html>
