@@ -15,14 +15,14 @@
     </div>
   </header>
   
-  <section id="hero">
+  <section id="hero" class="fade-up">
     <div class="hero-text">
       <h2 class="services-text">Diseño, Creación y Lanzamiento de Páginas Web</h2>
       <p class="services-text">¡Tu presencia en línea comienza aquí!</p>
     </div>
   </section>
   
-  <section id="services">
+  <section id="services" class="fade-up">
     <h2 class="services-title">Nuestros Servicios</h2>
     <div class="service">
       <h3 class="services-text">Diseño Web Personalizado</h3>
@@ -42,17 +42,34 @@
     </div>
   </section>
   
-  <footer>
+  <footer class="fade-up">
     <p class="footer-description">Alejandro Chiroque Tejada - Desarrollo Web &copy; 2023</p>
   </footer>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="smoothscroll.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $('a[href^="#"]').smoothScroll();
-  });
-</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.fade-up').each(function() {
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight() - 200;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if (bottom_of_window > bottom_of_element) {
+          $(this).addClass('visible');
+        }
+      });
+    });
+
+    $(window).scroll(function() {
+      $('.fade-up').each(function() {
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight() - 200;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if (bottom_of_window > bottom_of_element) {
+          $(this).addClass('visible');
+        }
+      });
+    });
+  </script>
 </body>
 </html>

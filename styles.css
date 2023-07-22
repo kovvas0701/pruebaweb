@@ -13,8 +13,8 @@ body {
   font-family: 'Arca Majora3';
   margin: 0;
   padding: 0;
-  color: #fff; /* Color de texto en blanco */
-  background-color: #1c1c1c; /* Color de fondo verde oscuro */
+  color: #000;
+  background-color: #f7f0e9; /* Cambia el color de fondo a beige (#f7f0e9) */
 }
 
 /* Encabezado */
@@ -22,7 +22,7 @@ body {
 /* Header */
 
 header {
-  background-color: #fff;
+  background-color: #f7f0e9;
   padding: 20px;
   text-align: center;
   color: #000;
@@ -39,17 +39,17 @@ h1 {
 
 .social-media a {
   text-decoration: none;
-  color: #000;
+  color: #052a4f; /* Cambia el color del texto a navy (#052a4f) */
   font-size: 16px;
   margin: 0 10px;
 }
 
 .social-media a:hover {
-  color: #00bcd4; /* Cambia a color celeste al pasar el mouse sobre el botón de Twitter */
+  color: #00bcd4;
 }
 
 .social-media a.instagram-button:hover {
-  color: #ff9800; /* Cambia a color naranja al pasar el mouse sobre el botón de Instagram */
+  color: #ff9800;
 }
 
 /* Hero Section */
@@ -62,7 +62,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #052a4f; /* Cambia el color del texto a navy (#052a4f) */
   text-align: center;
 }
 
@@ -114,14 +114,14 @@ h2:hover {
 }
 
 .service:hover p {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(5, 42, 79, 0.3); /* Cambia el color del borde a navy (#052a4f) */
 }
 
 /* Footer */
 
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: #052a4f; /* Cambia el color de fondo a navy (#052a4f) */
+  color: #f7f0e9;
   text-align: center;
   padding: 20px;
 }
@@ -149,8 +149,8 @@ footer {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 50px;
-  background-color: #000;
-  color: #fff;
+  background-color: #052a4f; /* Cambia el color de fondo a navy (#052a4f) */
+  color: #f7f0e9;
   text-decoration: none;
   margin-right: 10px;
   transition: background-color 0.3s ease-in-out;
@@ -168,7 +168,6 @@ footer {
 
 /* Nuevos estilos */
 
-
 .services-text {
   font-size: 24px;
   transition: font-size 0.3s ease-in-out;
@@ -177,4 +176,26 @@ footer {
 
 .services-text:hover {
   font-size: 28px;
+}
+
+header {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+  transition: opacity 1s, transform 1s;
 }
