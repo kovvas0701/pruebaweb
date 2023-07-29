@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tu página web</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.1.1/lazyload.min.js"></script>
-  <script src="script.js"></script>  <!-- js externo  -->
 </head>
 <body>
   <header>
@@ -25,23 +22,26 @@
     </div>
   </section>
   
-  <section id="services" class="fade-up">
+  <section id="services" class="fade-up scroll-down-reveal">
     <h2 class="services-title">Nuestros Servicios</h2>
     <div class="service">
+      <img class="lazy" data-src="imagen1.jpg" alt="Imagen 1">
       <h3 class="services-text">Diseño Web Personalizado</h3>
       <p class="services-text">Crearemos una página web única y atractiva que refleje la identidad de tu marca.</p>
     </div>
     <div class="service">
+      <img class="lazy" data-src="imagen2.jpg" alt="Imagen 2">
       <h3 class="services-text">Desarrollo Web</h3>
       <p class="services-text">Utilizamos HTML, CSS y JavaScript para crear sitios web modernos y funcionales.</p>
     </div>
     <div class="service">
+      <img class="lazy" data-src="imagen3.jpg" alt="Imagen 3">
       <h3 class="services-text">Lanzamiento y Optimización</h3>
       <p class="services-text">Nos encargaremos de lanzar tu sitio web y optimizarlo para un mejor rendimiento y visibilidad en los motores de búsqueda.</p>
     </div>
     <div class="social-media">
       <a href="https://www.twitter.com/tuusuario" target="_blank" class="twitter-button">Twitter</a>
-      <a href="https://www.instagram.com/tuusuario" target="_blank" class="instagram-button">Instagram</a>
+      <a href="https://www.instagram.com/alejandromcht" target="_blank" class="instagram-button">Instagram</a>
     </div>
   </section>
   
@@ -49,5 +49,8 @@
     <p class="footer-description">Alejandro Chiroque Tejada - Desarrollo Web &copy; 2023</p>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.3.0/lazyload.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

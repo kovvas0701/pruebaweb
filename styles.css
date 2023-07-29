@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   color: #000;
-  background-color: #f7f0e9; /* Cambia el color de fondo a beige (#f7f0e9) */
+  background-color: #f7f0e9; /* Beige suave (#f7f0e9) */
 }
 
 /* Encabezado */
@@ -22,10 +22,10 @@ body {
 /* Header */
 
 header {
-  background-color: #f7f0e9;
+  background-color: #f7f0e9; /* Beige suave (#f7f0e9) */
   padding: 20px;
   text-align: center;
-  color: #000;
+  color: #052a4f; /* Navy (#052a4f) */
 }
 
 h1 {
@@ -39,17 +39,17 @@ h1 {
 
 .social-media a {
   text-decoration: none;
-  color: #052a4f; /* Cambia el color del texto a navy (#052a4f) */
+  color: #052a4f; /* Navy (#052a4f) */
   font-size: 16px;
   margin: 0 10px;
 }
 
 .social-media a:hover {
-  color: #00bcd4;
+  color: #00bcd4; /* Celeste (#00bcd4) */
 }
 
 .social-media a.instagram-button:hover {
-  color: #ff9800;
+  color: #ff9800; /* Naranja (#ff9800) */
 }
 
 /* Hero Section */
@@ -62,7 +62,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #052a4f; /* Cambia el color del texto a navy (#052a4f) */
+  color: #052a4f; /* Navy (#052a4f) */
   text-align: center;
 }
 
@@ -120,8 +120,8 @@ h2:hover {
 /* Footer */
 
 footer {
-  background-color: #052a4f; /* Cambia el color de fondo a navy (#052a4f) */
-  color: #f7f0e9;
+  background-color: #052a4f; /* Navy (#052a4f) */
+  color: #f7f0e9; /* Beige suave (#f7f0e9) */
   text-align: center;
   padding: 20px;
 }
@@ -149,21 +149,21 @@ footer {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 50px;
-  background-color: #052a4f; /* Cambia el color de fondo a navy (#052a4f) */
-  color: #f7f0e9;
+  background-color: #052a4f; /* Navy (#052a4f) */
+  color: #f7f0e9; /* Beige suave (#f7f0e9) */
   text-decoration: none;
   margin-right: 10px;
   transition: background-color 0.3s ease-in-out;
 }
 
 .social-media a:hover {
-  background-color: #00bcd4;
-  color: #000;
+  background-color: #00bcd4; /* Celeste (#00bcd4) */
+  color: #000; /* Negro (#000) */
 }
 
 .social-media a.instagram-button:hover {
-  background-color: #ff9800;
-  color: #000;
+  background-color: #ff9800; /* Naranja (#ff9800) */
+  color: #000; /* Negro (#000) */
 }
 
 /* Nuevos estilos */
@@ -195,6 +195,17 @@ header {
 }
 
 .visible {
+  opacity: 1;
+  transform: none;
+  transition: opacity 1s, transform 1s;
+}
+
+.scroll-down-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.visible-scroll-down {
   opacity: 1;
   transform: none;
   transition: opacity 1s, transform 1s;
